@@ -13,7 +13,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MARKETPLACE = ROOT / ".agents" / "plugins" / "marketplace.json"
+MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
+LEGACY_MARKETPLACE = ROOT / ".agents" / "plugins" / "marketplace.json"
 PLUGIN_ROOT = ROOT / "plugins" / "algorithm-experiment-manager"
 PLUGIN_JSON = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
 SKILL_ROOT = PLUGIN_ROOT / "skills" / "algorithm-experiment-manager"
@@ -72,6 +73,10 @@ def check_marketplace() -> None:
         fail("marketplace policy.authentication must be ON_INSTALL")
     if entry.get("category") != "Productivity":
         fail("marketplace category must be Productivity")
+    if LEGACY_MARKETPLACE.exists():
+        legacy = read_json(LEGACY_MARKETPLACE)
+        if legacy != data:
+            fail(".agents/plugins/marketplace.json must match .claude-plugin/marketplace.json when both exist")
 
 
 def check_plugin_manifest() -> None:

@@ -5,6 +5,7 @@ This folder is the Codex plugin marketplace version of Algorithm Experiment Mana
 Important: upload hidden folders too:
 
 ```text
+.claude-plugin/
 .agents/
 .github/
 plugins/algorithm-experiment-manager/.codex-plugin/
@@ -34,7 +35,7 @@ GitHub no longer accepts account passwords for `git push`. If prompted for passw
 
 1. Open GitHub Desktop.
 2. Add local repository: `~/Desktop/algorithm-experiment-manager-upload`.
-3. Confirm the changed files include `.agents/`, `.github/`, and `.codex-plugin/`.
+3. Confirm the changed files include `.claude-plugin/`, `.agents/`, `.github/`, and `.codex-plugin/`.
 4. Commit and push to `ACA-ZZY/algorithm-experiment-manager`.
 
 ## Test In Codex After Upload

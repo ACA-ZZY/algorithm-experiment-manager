@@ -47,6 +47,8 @@ After installation, ask Codex things like:
 
 ```text
 .
+├── .claude-plugin/
+│   └── marketplace.json
 ├── .agents/
 │   └── plugins/
 │       └── marketplace.json
@@ -84,6 +86,7 @@ The validation checks:
 
 ## Plugin Metadata
 
+- Marketplace manifest: `.claude-plugin/marketplace.json`
 - Marketplace name: `aca-zzy`
 - Plugin name: `algorithm-experiment-manager`
 - Category: `Productivity`

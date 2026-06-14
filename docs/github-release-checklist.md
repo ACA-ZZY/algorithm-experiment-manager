@@ -3,7 +3,8 @@
 ## Before Push
 
 - [ ] Run `python3 scripts/validate_marketplace.py`.
-- [ ] Confirm `.agents/plugins/marketplace.json` has marketplace name `aca-zzy`.
+- [ ] Confirm `.claude-plugin/marketplace.json` has marketplace name `aca-zzy`.
+- [ ] Confirm `.agents/plugins/marketplace.json` matches `.claude-plugin/marketplace.json` for compatibility.
 - [ ] Confirm `plugins/algorithm-experiment-manager/.codex-plugin/plugin.json` has version `0.1.0`.
 - [ ] Confirm repository URLs point to `https://github.com/ACA-ZZY/algorithm-experiment-manager`.
 - [ ] Confirm the GitHub workflow exists at `.github/workflows/validate.yml`.
@@ -22,6 +23,7 @@ If you upload through the GitHub web interface, upload the whole repository root
 
 ```text
 .agents/
+.claude-plugin/
 .github/
 plugins/
 scripts/

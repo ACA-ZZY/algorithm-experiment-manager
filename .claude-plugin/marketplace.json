@@ -1,0 +1,20 @@
+{
+  "name": "aca-zzy",
+  "interface": {
+    "displayName": "ACA-ZZY"
+  },
+  "plugins": [
+    {
+      "name": "algorithm-experiment-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/algorithm-experiment-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

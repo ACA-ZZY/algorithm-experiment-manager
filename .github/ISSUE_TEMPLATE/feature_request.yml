@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a new template, metric family, workflow, or script feature.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Experiment scenario
+      description: What kind of algorithm experiment would this support?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the new template field, metric, workflow, or script behavior.
+    validations:
+      required: true

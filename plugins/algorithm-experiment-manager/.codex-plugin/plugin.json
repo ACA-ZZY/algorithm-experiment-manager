@@ -1,0 +1,36 @@
+{
+  "name": "algorithm-experiment-manager",
+  "version": "0.1.0",
+  "description": "Plan, record, compare, review, archive, and track reproducible research algorithm experiments.",
+  "author": {
+    "name": "ACA-ZZY",
+    "url": "https://github.com/ACA-ZZY"
+  },
+  "homepage": "https://github.com/ACA-ZZY/algorithm-experiment-manager",
+  "repository": "https://github.com/ACA-ZZY/algorithm-experiment-manager",
+  "license": "MIT",
+  "keywords": [
+    "codex-skill",
+    "research",
+    "algorithm-experiments",
+    "reproducibility",
+    "experiment-management"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Algorithm Experiment Manager",
+    "shortDescription": "Manage reproducible research algorithm experiments.",
+    "longDescription": "A general Codex Skill for planning, recording, comparing, reviewing, archiving, and tracking reproducible algorithm experiments across machine learning, deep learning, finite element methods, optimization, reliability analysis, inverse problems, numerical simulation, ablation studies, and engineering simulations.",
+    "developerName": "ACA-ZZY",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ACA-ZZY/algorithm-experiment-manager",
+    "defaultPrompt": [
+      "帮我设计一个算法实验。",
+      "记录这次实验结果并追加日志。",
+      "比较这些实验并整理论文证据。"
+    ]
+  }
+}
